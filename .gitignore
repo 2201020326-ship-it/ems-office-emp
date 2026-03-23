@@ -1,0 +1,25 @@
+# Python cache and env
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.venv/
+venv/
+.env
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+logs/ems.log
+
+# Frontend artifacts
+frontend/node_modules/
+frontend/dist/
+package-lock.json
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/

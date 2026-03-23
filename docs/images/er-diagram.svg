@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="560" viewBox="0 0 1300 560">
+  <defs>
+    <style>
+      .title { font: 700 24px Arial, sans-serif; fill: #0f172a; }
+      .tbl { fill: #ffffff; stroke: #0f172a; stroke-width: 2; rx: 8; }
+      .head { fill: #e2e8f0; stroke: #0f172a; stroke-width: 2; }
+      .t1 { font: 700 16px Arial, sans-serif; fill: #111827; }
+      .t2 { font: 500 13px Arial, sans-serif; fill: #1f2937; }
+      .pk { fill: #065f46; }
+      .fk { fill: #1d4ed8; }
+      .line { stroke: #334155; stroke-width: 2.5; marker-end: url(#m); }
+      .lbl { font: 500 12px Arial, sans-serif; fill: #334155; }
+    </style>
+    <marker id="m" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155" />
+    </marker>
+  </defs>
+
+  <text x="30" y="42" class="title">EMS Database ER Diagram</text>
+
+  <rect x="60" y="100" width="250" height="220" class="tbl"/>
+  <rect x="60" y="100" width="250" height="42" class="head"/>
+  <text x="135" y="126" class="t1">employees</text>
+  <text x="80" y="168" class="t2 pk">PK id</text>
+  <text x="80" y="192" class="t2">name</text>
+  <text x="80" y="216" class="t2">phone</text>
+  <text x="80" y="240" class="t2">password</text>
+  <text x="80" y="264" class="t2">role</text>
+
+  <rect x="380" y="70" width="260" height="250" class="tbl"/>
+  <rect x="380" y="70" width="260" height="42" class="head"/>
+  <text x="453" y="96" class="t1">attendance</text>
+  <text x="402" y="138" class="t2 pk">PK id</text>
+  <text x="402" y="162" class="t2 fk">FK employee_id</text>
+  <text x="402" y="186" class="t2">date</text>
+  <text x="402" y="210" class="t2">status</text>
+  <text x="402" y="234" class="t2">login_time</text>
+
+  <rect x="710" y="70" width="260" height="250" class="tbl"/>
+  <rect x="710" y="70" width="260" height="42" class="head"/>
+  <text x="776" y="96" class="t1">work_details</text>
+  <text x="732" y="138" class="t2 pk">PK id</text>
+  <text x="732" y="162" class="t2 fk">FK employee_id</text>
+  <text x="732" y="186" class="t2">work_date</text>
+  <text x="732" y="210" class="t2">hours_worked</text>
+  <text x="732" y="234" class="t2">description</text>
+
+  <rect x="1040" y="70" width="220" height="250" class="tbl"/>
+  <rect x="1040" y="70" width="220" height="42" class="head"/>
+  <text x="1109" y="96" class="t1">payroll</text>
+  <text x="1060" y="138" class="t2 pk">PK id</text>
+  <text x="1060" y="162" class="t2 fk">FK employee_id</text>
+  <text x="1060" y="186" class="t2">month</text>
+  <text x="1060" y="210" class="t2">year</text>
+  <text x="1060" y="234" class="t2">base_salary, net_salary</text>
+
+  <line x1="310" y1="180" x2="380" y2="180" class="line"/>
+  <line x1="310" y1="200" x2="710" y2="180" class="line"/>
+  <line x1="310" y1="220" x2="1040" y2="180" class="line"/>
+
+  <text x="324" y="171" class="lbl">1 - many</text>
+  <text x="500" y="170" class="lbl">1 - many</text>
+  <text x="700" y="165" class="lbl">1 - many</text>
+
+  <text x="60" y="470" class="lbl">Relationship key: employee_id connects all transactional modules with the employees master table.</text>
+</svg>

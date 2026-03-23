@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <defs>
+    <style>
+      .title { font: 700 24px Arial, sans-serif; fill: #0f172a; }
+      .node { fill: #e0f2fe; stroke: #0284c7; stroke-width: 2; rx: 10; }
+      .node2 { fill: #dcfce7; stroke: #16a34a; stroke-width: 2; rx: 10; }
+      .txt { font: 600 15px Arial, sans-serif; fill: #111827; }
+      .arrow { stroke: #334155; stroke-width: 2.5; marker-end: url(#m); }
+      .label { font: 500 13px Arial, sans-serif; fill: #334155; }
+    </style>
+    <marker id="m" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155" />
+    </marker>
+  </defs>
+
+  <text x="30" y="40" class="title">EMS Functional Workflow</text>
+
+  <rect x="40" y="120" width="180" height="70" class="node" />
+  <text x="77" y="162" class="txt">User Login</text>
+
+  <rect x="280" y="120" width="220" height="70" class="node" />
+  <text x="310" y="162" class="txt">JWT Auth + RBAC Check</text>
+
+  <rect x="560" y="60" width="250" height="70" class="node2" />
+  <text x="616" y="102" class="txt">Admin Dashboard</text>
+
+  <rect x="560" y="210" width="250" height="70" class="node2" />
+  <text x="607" y="252" class="txt">Employee Dashboard</text>
+
+  <rect x="880" y="60" width="250" height="70" class="node" />
+  <text x="945" y="95" class="txt">Admin Actions</text>
+  <text x="903" y="114" class="label">Register, Attendance, Payroll</text>
+
+  <rect x="880" y="210" width="250" height="70" class="node" />
+  <text x="934" y="245" class="txt">Employee Actions</text>
+  <text x="922" y="264" class="label">Work, Leave, Timesheets</text>
+
+  <line x1="220" y1="155" x2="280" y2="155" class="arrow" />
+  <line x1="500" y1="155" x2="560" y2="95" class="arrow" />
+  <line x1="500" y1="155" x2="560" y2="245" class="arrow" />
+
+  <line x1="810" y1="95" x2="880" y2="95" class="arrow" />
+  <line x1="810" y1="245" x2="880" y2="245" class="arrow" />
+</svg>

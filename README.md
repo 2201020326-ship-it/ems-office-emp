@@ -17,6 +17,14 @@ A full-stack Employee Management System for attendance tracking, leave managemen
 - Payroll generation (admin) and payroll history view
 - Employee support chatbot and FAQ endpoints
 
+## Project Report
+
+- Full project report: [docs/EMS_Project_Report.md](docs/EMS_Project_Report.md)
+- Functional workflow diagram: [docs/images/functional-workflow.svg](docs/images/functional-workflow.svg)
+- System architecture diagram: [docs/images/system-architecture.svg](docs/images/system-architecture.svg)
+- ER diagram: [docs/images/er-diagram.svg](docs/images/er-diagram.svg)
+- API flow diagram: [docs/images/api-flow.svg](docs/images/api-flow.svg)
+
 ## Project Structure
 
 - main.py: FastAPI app entry point

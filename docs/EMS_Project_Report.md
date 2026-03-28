@@ -178,7 +178,7 @@ Key features:
 
 Core formula:
 
-Salary = (Base Salary / Total Days) * Present Days
+Salary = (Base Salary / Total Days) \* Present Days
 
 Table:
 
@@ -268,14 +268,14 @@ Testing types used:
 
 Sample test cases:
 
-| Test Case | Input | Expected Output |
-| --- | --- | --- |
-| Login | Valid credentials | Successful login with token |
-| Login | Invalid credentials | Error response |
-| Register | New employee details | Employee created |
-| Attendance | User login | Attendance marked |
-| Leave | Apply leave request | Leave recorded |
-| Payroll | Generate salary | Correct salary output |
+| Test Case  | Input                | Expected Output             |
+| ---------- | -------------------- | --------------------------- |
+| Login      | Valid credentials    | Successful login with token |
+| Login      | Invalid credentials  | Error response              |
+| Register   | New employee details | Employee created            |
+| Attendance | User login           | Attendance marked           |
+| Leave      | Apply leave request  | Leave recorded              |
+| Payroll    | Generate salary      | Correct salary output       |
 
 Results:
 
@@ -314,13 +314,13 @@ Results:
 
 ## 15. Project Timeline
 
-| Phase | Description | Duration |
-| --- | --- | --- |
-| Requirement Analysis | Requirement gathering and scope definition | 1 week |
-| System Design | Architecture and database design | 1 week |
-| Development | Frontend and backend implementation | 3 weeks |
-| Testing | Debugging and validation | 1 week |
-| Deployment | Hosting and final setup | 1 week |
+| Phase                | Description                                | Duration |
+| -------------------- | ------------------------------------------ | -------- |
+| Requirement Analysis | Requirement gathering and scope definition | 1 week   |
+| System Design        | Architecture and database design           | 1 week   |
+| Development          | Frontend and backend implementation        | 3 weeks  |
+| Testing              | Debugging and validation                   | 1 week   |
+| Deployment           | Hosting and final setup                    | 1 week   |
 
 ## 16. Conclusion
 
